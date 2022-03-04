@@ -4,7 +4,8 @@
     "start": "webpack serve",
     "watch": "webpack --watch",
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack"
+    "dev": "webpack",
+    "clean": "rimraf dist"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
@@ -13,10 +14,12 @@
     "babel-loader": "^8.2.3",
     "cross-env": "^7.0.3",
     "css-loader": "^6.6.0",
+    "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.3",
     "postcss": "^8.4.7",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.4.2",
+    "rimraf": "^3.0.2",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
     "webpack": "^5.16.0",
